@@ -1,0 +1,31 @@
+.container {
+    max-width: 1080px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+    -webkit-scroll-snap-type: mandatory;
+    -webkit-scroll-snap-destination: 0% 0%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 48px;
+    min-width: 300px;
+    margin-right: 36px;
+    height: 300px;
+    background: seagreen;
+    scroll-snap-align: center;
+    scroll-snap-coordinate: 50% 0%;
+    -webkit-scroll-snap-coordinate: 50% 0%;
+}
